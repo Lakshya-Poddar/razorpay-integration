@@ -18,7 +18,7 @@ function App() {
       alert("Failed to load SDK, Are you still online??");
       return;
     }
-    const data = await fetch("http://localhost:1337/razorpay", {
+    const data = await fetch("http://localhost:1338/razorpay", {
       method: "POST",
     }).then((t) => t.json());
     console.log(data);
