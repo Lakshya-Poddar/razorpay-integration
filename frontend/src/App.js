@@ -48,13 +48,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h3>TEST RAZORPAY</h3>
         <a
           className="App-link"
           onClick={displayRazorPay}
           target="_blank"
           rel="noopener noreferrer"
           style={{
-            border: "1px solid #fff",
+            border: "2px solid #fff",
             padding: "10px",
             borderRadius: "5px",
           }}

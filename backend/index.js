@@ -9,6 +9,15 @@ const razorpay = new Razorpay({
   key_secret: process.env.KEY_SECRET, //Put the key secret of the razorpay api
 });
 app.use(cors());
+
+//Set up cors for production to allow limit access
+
+// const corsOptions = {
+//   origin: "http://localhost:3000", //from where the req will be made i.e. the frontend
+//   optionsSuccessStatus: 200, // for legacy browser support
+// };
+// app.use(cors(corsOptions));
+
 app.get("/logo.svg", (req, res) => {
   res.sendFile(path.join(__dirname, "logo.svg"));
 });
