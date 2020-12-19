@@ -5,8 +5,8 @@ const shortid = require("shortid");
 const cors = require("cors");
 require("dotenv").config();
 const razorpay = new Razorpay({
-  key_id: process.env.KEY_ID,
-  key_secret: process.env.KEY_SECRET,
+  key_id: process.env.KEY_ID, // Put the key id of the razorpay api
+  key_secret: process.env.KEY_SECRET, //Put the key secret of the razorpay api
 });
 app.use(cors());
 app.get("/logo.svg", (req, res) => {

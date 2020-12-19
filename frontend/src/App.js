@@ -23,7 +23,7 @@ function App() {
     }).then((t) => t.json());
     console.log(data);
     var options = {
-      key: process.env.REACT_APP_KEY,
+      key: process.env.REACT_APP_KEY, //put the secret key of the razorpay api
       amount: data.amount,
       currency: "INR",
       name: "Testing",
